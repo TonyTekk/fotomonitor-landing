@@ -23,5 +23,13 @@
       margin-right: 8px;
       color: $c-red;
     }
+
+    a {
+      transition: all $a-time $a-type;
+
+      &:hover {
+        color: $c-red;
+      }
+    }
   }
 }
