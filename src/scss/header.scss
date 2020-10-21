@@ -19,11 +19,22 @@ header {
       margin-left: 16px;
       background-color: $c-corp;
       color: $c-white;
+      font-size: 18px;
       text-transform: uppercase;
+
+      @include media-breakpoint-down(md) {
+        padding: 0 8px;
+        margin-left: 8px;
+        font-size: 14px;
+      }
     }
 
     li {
       padding: 0 8px;
+
+      @include media-breakpoint-down(md) {
+        padding: 0 4px;
+      }
     }
 
     a {
