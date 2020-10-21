@@ -23,6 +23,8 @@
     background-color: rgba(0, 0, 0, 0.4);
     padding: 16px;
     margin: 16px;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
 
     @include media-breakpoint-down(md) {
       padding: 8px;

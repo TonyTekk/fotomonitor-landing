@@ -10,6 +10,10 @@ $c-corp: #356397;
 $a-time: .3s;
 $a-type: ease-in-out;
 
+// CSS vars
+$box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px -1px;
+$border-radius: 2px;
+
 // Break Points
 @mixin media-breakpoint-down($point) {
   @if $point == xl {

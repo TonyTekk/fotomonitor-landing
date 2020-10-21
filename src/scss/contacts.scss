@@ -17,6 +17,8 @@
     position: relative;
     height: 600px;
     width: 100%;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
   }
 
   .contacts-menu {
@@ -26,7 +28,9 @@
     width: 282px;
     padding: 10px;
     font-size: 18px;
-    background-color: $c-white;
+    background-color: white;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
 
     @media (max-width: 415px) {
       top: 70px;
