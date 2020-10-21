@@ -1,0 +1,23 @@
+.service {
+
+  .service-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 32px;
+  }
+
+  .service-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    font-size: 24px;
+
+    img {
+      width: 200px;
+      margin-bottom: 16px;
+    }
+  }
+}
