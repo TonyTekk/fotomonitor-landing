@@ -17,8 +17,7 @@ header {
       align-items: center;
       padding: 0 16px;
       margin-left: 16px;
-      //background-color: $c-corp;
-      //color: $c-white;
+      color: $c-white;
       font-size: 32px;
       text-transform: uppercase;
 
@@ -38,13 +37,11 @@ header {
     }
 
     a {
-      //color: $c-white;
-      color: $c-black;
+      color: $c-white;
       transition: all $a-time $a-type;
 
       &:hover {
-        //color: $c-blue;
-        color: $c-red;
+        color: $c-blue;
       }
     }
   }

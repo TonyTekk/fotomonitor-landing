@@ -15,12 +15,29 @@
 @import "footer";
 @import "contacts";
 @import "service";
+@import "page-title";
 
 body {
   background-color: $c-white;
   color: black;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+  background-image: url("/dist/static/images/image_7.jpeg");
+  background-size: 100% auto;
+}
+
+section {
+  position: relative;
+
+  .section-title {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 64px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 46px;
+    }
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,89 +46,4 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: $c-black;
-}
-
-main {
-
-}
-
-section {
-  margin-top: 124px;
-  margin-bottom: 32px;
-}
-
-.title {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  color: $c-white;
-
-  @include media-breakpoint-down(md) {
-    height: 300px;
-  }
-
-  img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-
-    @include media-breakpoint-down(md) {
-      height: 300px;
-    }
-  }
-
-  .title-text {
-    position: absolute;
-    top: 64px;
-    left: 100px;
-    width: 900px;
-    font-size: 64px;
-    text-transform: uppercase;
-
-    span {
-      text-transform: none;
-      display: block;
-      font-size: 48px;
-
-      @include media-breakpoint-down(lg) {
-        font-size: 32px;
-      }
-
-      @include media-breakpoint-down(md) {
-        font-size: 18px;
-      }
-    }
-
-    @include media-breakpoint-down(lg) {
-      top: 30px;
-      left: 20px;
-      width: auto;
-      font-size: 48px;
-    }
-
-    @include media-breakpoint-down(md) {
-      top: 30px;
-      left: 20px;
-      font-size: 24px;
-    }
-  }
-
-  .img-background-layer {
-    background-color: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.section-title {
-  text-align: center;
-  font-size: 64px;
-  margin-bottom: 64px;
-
-  @include media-breakpoint-down(md) {
-    font-size: 46px;
-  }
 }

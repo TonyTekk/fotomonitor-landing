@@ -1,15 +1,15 @@
 .service {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  margin-left: 90px;
 
-  .service-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 32px;
+  @include media-breakpoint-down(lg) {
+    margin-left: 0;
+  }
 
-    @include media-breakpoint-down(md) {
-      flex-direction: column;
-      align-items: center;
-    }
+  @include media-breakpoint-down(sm) {
+    justify-content: center;
   }
 
   .service-type {
@@ -18,9 +18,17 @@
     justify-content: center;
     align-items: center;
     width: 300px;
-    margin-bottom: 64px;
     text-align: center;
     font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 16px;
+    margin: 16px;
+
+    @include media-breakpoint-down(md) {
+      padding: 8px;
+      margin: 8px;
+      width: 250px;
+    }
 
     img {
       width: 200px;
