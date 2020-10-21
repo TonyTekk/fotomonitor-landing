@@ -1,0 +1,27 @@
+.contacts {
+  .map {
+    position: relative;
+    height: 400px;
+    width: 100%;
+  }
+
+  .contacts-menu {
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    width: 282px;
+    padding: 10px;
+    background-color: $c-white;
+
+    li {
+      display: flex;
+      align-items: center;
+      height: 30px;
+    }
+
+    i {
+      margin-right: 8px;
+      color: $c-red;
+    }
+  }
+}

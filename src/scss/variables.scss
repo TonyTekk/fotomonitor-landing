@@ -1,0 +1,48 @@
+// Colors
+$c-white: #FFFFFF;
+$c-black: #000000;
+$c-blue: #5b83c3;
+$c-red: #E94F37;
+$c-grey: #8A897C;
+$c-corp: #356397;
+
+// Animation
+$a-time: .3s;
+$a-type: ease-in-out;
+
+// Break Points
+@mixin media-breakpoint-down($point) {
+  @if $point == xl {
+    @media (max-width: 1200px) { @content ; }
+  }
+  @else if $point == lg {
+    @media (max-width: 992px) { @content ; }
+  }
+  @else if $point == md {
+    @media (max-width: 768px) { @content ; }
+  }
+  @else if $point == sm {
+    @media (max-width: 576px)  { @content ; }
+  }
+  @else if $point == xs {
+    @media (max-width: 0)  { @content ; }
+  }
+}
+
+@mixin media-breakpoint-up($point) {
+  @if $point == xl {
+    @media (min-width: 1200px) { @content ; }
+  }
+  @else if $point == lg {
+    @media (min-width: 992px) { @content ; }
+  }
+  @else if $point == md {
+    @media (min-width: 769px) { @content ; }
+  }
+  @else if $point == sm {
+    @media (min-width: 576px)  { @content ; }
+  }
+  @else if $point == xs {
+    @media (min-width: 0)  { @content ; }
+  }
+}

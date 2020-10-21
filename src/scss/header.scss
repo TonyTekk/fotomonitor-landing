@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  padding: 16px;
+
+  @include media-breakpoint-down(md) {
+    padding: 8px;
+  }
+
+  nav {
+    display: flex;
+    padding: 4px 0;
+    width: 100%;
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 0 16px;
+      margin-left: 16px;
+      background-color: $c-corp;
+      color: $c-white;
+      text-transform: uppercase;
+    }
+
+    li {
+      padding: 0 8px;
+    }
+
+    a {
+      color: $c-white;
+      transition: all $a-time $a-type;
+
+      &:hover {
+        color: $c-blue;
+      }
+    }
+  }
+
+  .logo {
+    height: 60px;
+  }
+}

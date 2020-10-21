@@ -1,0 +1,86 @@
+// Reset default styles
+@import "reset";
+
+// Custom variables
+@import "variables";
+
+// Import main Bootstrap styles
+//@import "~bootstrap/scss/bootstrap";
+
+// Import Material Icons
+@import "material-icons";
+
+// Components
+@import "header";
+@import "contacts";
+
+body {
+  background-color: $c-white;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+a {
+  color: $c-black;
+}
+
+main {
+  padding: 0 16px;
+
+  @include media-breakpoint-down(md) {
+    padding: 0 8px;
+  }
+
+  section {
+    margin: 48px 0;
+  }
+}
+
+.img-main {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  color: $c-white;
+
+  img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .title {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    text-transform: uppercase;
+  }
+
+  .img-background-layer {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+footer {
+  padding: 16px;
+  color: $c-white;
+  background-color: $c-corp;
+  text-align: right;
+}
