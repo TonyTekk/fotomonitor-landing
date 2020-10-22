@@ -32,6 +32,10 @@
       width: 250px;
     }
 
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+
     img {
       width: 200px;
       margin-bottom: 16px;
