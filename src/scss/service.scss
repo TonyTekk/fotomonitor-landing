@@ -2,13 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   color: white;
+  margin-top: 8px;
   margin-left: 90px;
 
   @include media-breakpoint-down(lg) {
     margin-left: 0;
   }
 
-  @include media-breakpoint-down(sm) {
+  @media (max-width: 526px) {
     justify-content: center;
   }
 
@@ -17,27 +18,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 230px;
     text-align: center;
-    font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 16px;
-    margin: 16px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    margin: 8px;
     box-shadow: $box-shadow;
     border-radius: $border-radius;
 
-    @include media-breakpoint-down(md) {
-      padding: 8px;
-      margin: 8px;
-      width: 250px;
-    }
-
-    @include media-breakpoint-down(sm) {
+    @media (max-width: 526px) {
       width: 100%;
     }
 
-    img {
-      width: 200px;
+    .service-img {
+      width: 120px;
+      margin-bottom: 16px;
+    }
+
+    .service-title {
+      font-weight: 400;
       margin-bottom: 16px;
     }
   }

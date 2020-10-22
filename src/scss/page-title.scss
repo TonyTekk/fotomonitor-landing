@@ -1,17 +1,10 @@
 .page-title {
   position: relative;
   color: $c-white;
-
-  margin-top: 30px;
-  margin-left: 146px;
-  margin-bottom: 32px;
+  margin-left: 116px;
+  margin-top: 16px;
 
   @include media-breakpoint-down(lg) {
-    margin-top: 30px;
-    margin-left: 16px;
-  }
-
-  @include media-breakpoint-down(sm) {
     margin-left: 8px;
   }
 }
