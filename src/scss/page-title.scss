@@ -3,6 +3,7 @@
   color: $c-white;
   margin-left: 114px;
   margin-top: 16px;
+  margin-bottom: 16px;
 
   @include media-breakpoint-down(lg) {
     margin-left: 8px;

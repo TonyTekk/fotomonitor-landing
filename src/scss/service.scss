@@ -9,36 +9,37 @@
     margin-left: 0;
   }
 
-  @media (max-width: 526px) {
+  @media (max-width: 510px) {
     justify-content: center;
   }
 
   .service-type {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     width: 230px;
     text-align: center;
     font-size: 18px;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 8px;
-    margin: 8px;
+    margin: 4px;
     box-shadow: $box-shadow;
     border-radius: $border-radius;
 
-    @media (max-width: 526px) {
-      width: 100%;
+    @media (max-width: 510px) {
+      // width: 100%;
     }
 
     .service-img {
-      width: 120px;
+      width: 226px;
       margin-bottom: 16px;
     }
 
     .service-title {
       font-weight: 400;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
+      padding: 0 8px;
     }
   }
 }
