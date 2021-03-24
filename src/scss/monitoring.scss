@@ -1,0 +1,72 @@
+.monitoring {
+  position: relative;
+
+  img {
+    position: relative;
+    width: 850px;
+    margin-left: 450px;
+    margin-top: -70px;
+    z-index: -1;
+
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
+
+  &-service {
+    position: absolute;
+
+    li {
+      position: relative;
+      color: $c-white;
+      padding: 24px 16px;
+      margin: 32px 16px;
+      background-color: $c-background;
+      box-shadow: $box-shadow;
+      border-radius: $border-radius;
+      transition: transform $a-time;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: -40px;
+        top: -20px;
+        border-radius: 40px;
+        background: #415c87;
+
+        .material-icons {
+          color: $c-white;
+          font-size: 48px;
+
+          @include media-breakpoint-down(lg) {
+            font-size: 32px;
+          }
+        }
+
+        @include media-breakpoint-down(lg) {
+          width: 40px;
+          height: 40px;
+          border-radius: 20px;
+          left: -10px;
+          top: -20px;
+        }
+      }
+
+      .__container {
+        position: relative;
+        z-index: 10;
+        padding-left: 8px;
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+  }
+}
