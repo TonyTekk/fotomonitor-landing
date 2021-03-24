@@ -42,6 +42,10 @@ main {
     }
 }
 
+.__link {
+  text-decoration: underline;
+}
+
 .__underline {
   position: relative;
   transition: all $a-time $a-type;
