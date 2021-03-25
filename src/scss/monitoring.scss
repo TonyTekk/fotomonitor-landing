@@ -4,19 +4,21 @@
   img {
     position: relative;
     width: 800px;
-    margin-left: 500px;
-    margin-top: -40px;
+    margin-left: 510px;
+    margin-top: -60px;
     z-index: -1;
 
     @include media-breakpoint-down(lg) {
-      width: 100%;
-      margin-left: 0;
-      margin-top: 0;
+      display: none;
     }
   }
 
   &-service {
     position: absolute;
+
+    @include media-breakpoint-down(lg) {
+      position: relative;
+    }
 
     li {
       position: relative;
