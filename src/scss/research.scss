@@ -89,8 +89,9 @@
 
 
   &-calculation {
-    background-color: white;
+    //background-color: white;
     background-image: url(../../dist/static/paper.jpeg);
+    max-width: 700px;
     //background-size: 50%;
 
 
@@ -109,5 +110,52 @@
       flex-direction: column;
       margin-bottom: 24px;
     }
+  }
+
+  table {
+    padding: 16px;
+    margin: 16px;
+    border-collapse:collapse;
+  }
+
+  #table_1 {
+    width: 400px;
+
+    td {
+      padding: 6px 2px;
+    }
+  }
+
+  #table_2 {
+    width: 100%;
+
+    th {
+      font-size: 14px;
+      vertical-align: top;
+    }
+
+    td {
+      padding: 8px 4px;
+    }
+  }
+
+  th {
+    text-align: left;
+    padding: 8px 2px;
+  }
+
+  .__border {
+    border-bottom: 1px solid black;
+    margin-bottom: 8px;
+  }
+
+  .table-container {
+    //width: 100%;
+    display: flex;
+    //justify-content: center;
+    //background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../../dist/static/paper.jpeg);
+    border-radius: 2px;
+    margin-bottom: 19px;
   }
 }
