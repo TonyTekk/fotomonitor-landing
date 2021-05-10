@@ -70,6 +70,10 @@
         </ul>
     </nav>
 
+    <div class="download-container">
+        <a class="download-button" href="dist/static/docs/rating.pdf" download>завантажити pdf</a>
+    </div>
+
     <div class="page-title">
         <!--
         <h2>Оцінка єфективності носіїв зовнішньої реклами</h2>
@@ -81,7 +85,7 @@
 
         <div class="research-service">
             <ul>
-                <li class="research-service-item">
+                <li class="research-service-item __animation_up">
                     <div class="item-title">
                         <h3>Місце розташування</h3>
                     </div>
@@ -94,7 +98,7 @@
                     </ul>
                 </li>
 
-                <li class="research-service-item">
+                <li class="research-service-item __animation_up">
                     <div class="item-title">
                         <h3>Зона огляду</h3>
                     </div>
@@ -108,7 +112,7 @@
                     </ul>
                 </li>
 
-                <li class="research-service-item">
+                <li class="research-service-item __animation_up">
                     <div class="item-title">
                         <h3>Прив’язка до транспортних потоків</h3>
                     </div>
@@ -121,7 +125,7 @@
                     </ul>
                 </li>
 
-                <li class="research-service-item">
+                <li class="research-service-item __animation_up">
                     <div class="item-title">
                         <h3>Розрахунок VAC</h3>
                     </div>
@@ -135,7 +139,7 @@
                     </ul>
                 </li>
 
-                <li class="research-service-item">
+                <li class="research-service-item __animation_up">
                     <div class="item-title">
                         <h3>Оцінка якості потоку</h3>
                     </div>
@@ -149,7 +153,7 @@
                     </ul>
                 </li>
 
-                <li class="research-service-item">
+                <li class="research-service-item __animation_up">
                     <div class="item-title">
                         <h3>Розрахунок медійних параметрів</h3>
                     </div>
@@ -165,7 +169,7 @@
                     </ul>
                 </li>
 
-                <li class="research-service-item">
+                <li class="research-service-item __animation_up">
                     <div class="item-title">
                         <h3>Динаміка (LED)</h3>
                     </div>
@@ -210,7 +214,7 @@
         </div>
     </section>
     <section>
-        <div class="section-description">Приклад розрахунка</div>
+        <div class="section-description">Приклад</div>
         <div style="display: flex;">
             <div class="table-container">
                     <table id="table_1">
@@ -219,18 +223,18 @@
                             <th>Значение</th>
                             <th>ед. изм</th>
                         </tr>
-                        <tr><td>OTS ст. (пеш.)</td><td>2 000</td><td>чел.</td></tr>
-                        <tr><td>OTS ст. (авт.)</td><td>37 000</td><td>чел.</td></tr>
-                        <tr><td>Kst(авт)</td><td>0.9</td><td></td></tr>
+                        <tr><td>OTS ст. <span style="font-size: 12px;">(пеш.)</span></td><td>2 000</td><td>чел.</td></tr>
+                        <tr><td>OTS ст. <span style="font-size: 12px;">(авт.)</span></td><td>37 000</td><td>чел.</td></tr>
+                        <tr><td>Kst <span style="font-size: 12px;">(авт)</span></td><td>0.9</td><td></td></tr>
                         <tr><td>Дистанция</td><td>229</td><td>м</td></tr>
                         <tr><td>Скорость</td><td>31</td><td>км/час</td></tr>
                         <tr><td>Время</td><td>26,6</td><td>сек</td></tr>
                         <tr><td>Длина блока</td><td>100</td><td>сек</td></tr>
-                        <tr><td>Длинат спота</td><td>10</td><td>сек</td></tr>
-                        <tr><td>CNT(sp)</td><td>3,6</td><td>шт</td></tr>
-                        <tr><td>P(spot)</td><td>0,36</td><td></td></tr>
-                        <tr><td>OTS(sp)</td><td>16 658</td><td>конт.</td></tr>
-                        <tr><td>OTS(констр.)</td><td>166 578</td><td>конт.</td></tr>
+                        <tr><td>Длина спота</td><td>10</td><td>сек</td></tr>
+                        <tr><td>CNT <span style="font-size: 12px;">(sp)</span></td><td>3,6</td><td>шт</td></tr>
+                        <tr><td>P <span style="font-size: 12px;">(spot)</span></td><td>0,36</td><td></td></tr>
+                        <tr><td>OTS <span style="font-size: 12px;">(sp)</span></td><td>16 658</td><td>конт.</td></tr>
+                        <tr><td>OTS <span style="font-size: 12px;">(констр.)</span></td><td>166 578</td><td>конт.</td></tr>
                     </table>
             </div>
 
@@ -238,7 +242,9 @@
                 <img style="width: 100%;" src="dist/static/zone_1.png">
             </div>
         </div>
-
+        <!--
+        <div class="section-description">Статичні параметри</div>
+        -->
         <div style="display: flex; margin-bottom: 16px;">
             <img style="width: 200px;" src="dist/static/min_map.bmp">
 
@@ -250,10 +256,10 @@
                         <th>Микроавто бусы<br><span style="font-size: 12px;"> шт./сутки</span></th>
                         <th>Авто.<br><span style="font-size: 12px;">шт./сутки</span></th>
                         <th>Пешеходы<br><span style="font-size: 12px;">чел./сутки</span></th>
-                        <th>OTS авт.</th>
-                        <th>OTS пасс.</th>
-                        <th>OTS пеш.</th>
-                        <th>OTS сутки</th>
+                        <th>OTS <span style="font-size: 12px;">авт.</span></th>
+                        <th>OTS <span style="font-size: 12px;">пасс.</span></th>
+                        <th>OTS <span style="font-size: 12px;">пеш.</span></th>
+                        <th>OTS <span style="font-size: 12px;">сутки</span></th>
                         <th>GRP</th>
                     </tr>
                     <tr>
@@ -283,9 +289,10 @@
                 </table>
             </div>
         </div>
-        <div style="display: flex; max-width: 1200px; justify-content: right;">
-            <img style="width: 50%;" src="dist/static/intensity_1.png">
-            <img style="width: 50%; margin: 0 16px;" src="dist/static/speed_1.png">
+
+        <div style="display: flex; width: 100%; justify-content: flex-end;">
+            <img style="width: 50%; max-width: 550px;" src="dist/static/intensity_1.png">
+            <img style="width: 50%; margin: 0 16px; max-width: 550px;" src="dist/static/speed_1.png">
         </div>
     </section>
     <!--

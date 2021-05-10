@@ -19,6 +19,7 @@
 @import "monitoring";
 @import "research";
 @import "navigation";
+@import "download-container";
 
 body {
   background-color: $c-corp;
@@ -69,5 +70,18 @@ main {
   &:hover:before {
     visibility: visible;
     transform: scaleX(1);
+  }
+}
+
+.__border {
+  border-bottom: 1px solid black;
+  margin-bottom: 4px;
+}
+
+.__animation_up {
+  transition: transform $a-time;
+
+  &:hover {
+    transform: translateY(-4px);
   }
 }

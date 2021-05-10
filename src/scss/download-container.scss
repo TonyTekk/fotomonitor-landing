@@ -1,0 +1,26 @@
+.download-container {
+  display: flex;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 1000;
+  padding: 16px 32px;
+
+  .download-button {
+    text-transform: uppercase;
+    padding: 8px 32px;
+    border: 2px solid $c-white;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    transition: all $a-time;
+    font-size: 14px;
+    background-color: $c-corp;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $c-background;
+      //border: 2px solid $c-background;
+    }
+  }
+}
