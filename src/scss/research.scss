@@ -88,17 +88,12 @@
 
 
   &-calculation {
-    //background-color: white;
     background-image: url(../../dist/static/paper.jpeg);
     max-width: 700px;
-    //background-size: 50%;
-
 
     box-shadow: $box-shadow;
     border-radius: $border-radius;
     padding: 32px 32px;
-    margin: 16px 8px;
-    width: 70%;
 
     @include media-breakpoint-down(lg) {
       width: 100%;
@@ -119,10 +114,6 @@
 
   #table_1 {
     width: 400px;
-
-    td {
-      padding: 6px 2px;
-    }
   }
 
   #table_2 {
@@ -132,15 +123,15 @@
       font-size: 14px;
       vertical-align: top;
     }
+  }
 
-    td {
-      padding: 8px 4px;
-    }
+  td {
+    padding: 8px 4px;
   }
 
   th {
     text-align: left;
-    padding: 8px 2px;
+    padding: 8px 4px;
   }
 
   .table-container {
@@ -150,6 +141,6 @@
     //background-color: rgba(0, 0, 0, 0.5);
     background-image: url(../../dist/static/paper.jpeg);
     border-radius: 2px;
-    margin-bottom: 19px;
+    margin-left: 16px;
   }
 }
