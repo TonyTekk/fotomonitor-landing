@@ -1,4 +1,12 @@
 .research {
+  .section-container {
+    display: flex;
+
+    @include media-breakpoint-down(lg) {
+      display: block;
+    }
+  }
+
 
   &-service {
     margin-right: 16px;
