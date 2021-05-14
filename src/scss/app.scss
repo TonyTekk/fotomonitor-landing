@@ -85,3 +85,25 @@ main {
     transform: translateY(-4px);
   }
 }
+
+.__formula {
+  font-size: 24px;
+  margin-bottom: 8px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 18px;
+  }
+
+  &-title {
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  &-description {
+    font-size: 16px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 14px;
+    }
+  }
+}

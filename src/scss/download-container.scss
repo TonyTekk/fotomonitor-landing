@@ -23,4 +23,10 @@
       //border: 2px solid $c-background;
     }
   }
+
+  @include media-breakpoint-down(lg) {
+    padding: 0;
+    top: auto;
+    bottom: 16px;
+  }
 }

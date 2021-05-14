@@ -112,7 +112,7 @@
                             <h3>Прив’язка до транспортних потоків</h3>
                         </div>
                         <ul class="item-description">
-                            <li>• Розрахунокположення носія відноснокожного потоку</li>
+                            <li>• Розрахунокположення носія відносно кожного потоку</li>
                             <li>• Визначення максимальної дальностті огляду до кожного потоку</li>
                         </ul>
                     </li>
@@ -166,38 +166,40 @@
 
             <div class="research-calculation">
                 <p>
-                    <span style="margin-bottom: 8px; font-weight: 700;">• Розрахунок аудиторії</span>
-                    <span><span style="font-size: 24px;">Aud</span> = (добовий трафік) x (коефіцієнт огляду)</span>
+                    <span class="__formula-title">• Розрахунок аудиторії</span>
+                    <span><span class="__formula">Aud</span> = (добовий трафік) x (коефіцієнт огляду)</span>
                 </p>
                 <p>
-                    <span style="margin-bottom: 8px; font-weight: 700;">• Кількість побачених роликів</span>
-                    <span style="margin-bottom: 8px; font-size: 24px;">Cnt(sp) = (А+B-1)/В</span>
-                    <span style="font-size: 16px;">А – час знаходження глядача в зоні обзору (сек.)<br>В – довжина ролика (сек.)</span>
+                    <span class="__formula-title">• Кількість побачених роликів</span>
+                    <span class="__formula">Cnt(sp) = (А+B-1)/В</span>
+                    <span class="__formula-description">А – час знаходження глядача в зоні обзору (сек.)<br>В – довжина ролика (сек.)</span>
                 </p>
                 <p>
-                    <span style="margin-bottom: 8px; font-weight: 700;">• Вірогідність побачити ролик</span>
-                    <span style="margin-bottom: 8px; font-size: 24px;">P(spot)= Cnt(sp)/N</span>
-                    <span style="font-size: 16px;">N – Кількість роликів в блоці</span>
+                    <span class="__formula-title">• Вірогідність побачити ролик</span>
+                    <span class="__formula">P(spot)= Cnt(sp)/N</span>
+                    <span class="__formula-description">N – Кількість роликів в блоці</span>
                 </p>
                 <p>
-                    <span style="margin-bottom: 8px; font-weight: 700;">• Кількість контактів для ролика</span>
-                    <span style="margin-bottom: 8px; font-size: 24px;">OTS(sp) = Aud x P(spot) x k</span>
-                    <span style="font-size: 16px;">k = 1.2 – 1.5 фактординамічної зміни</span>
+                    <span class="__formula-title">• Кількість контактів для ролика</span>
+                    <span class="__formula">OTS(sp) = Aud x P(spot) x k</span>
+                    <span class="__formula-description">k = 1.2 – 1.5 фактординамічної зміни</span>
                 </p>
                 <p>
-                    <span style="margin-bottom: 8px; font-weight: 700;">• Загальна кількість контактів для носія</span>
-                    <span><span style="font-size: 24px;">OTS</span> площини = OTS(sp) x N</span>
+                    <span class="__formula-title">• Загальна кількість контактів для носія</span>
+                    <span><span class="__formula">OTS</span> площини = OTS(sp) x N</span>
                 </p>
             </div>
         </div>
     </section>
 
     <section>
+
         <div class="section-description">Приклад</div>
 
-        <div style="display: flex; margin-bottom: 16px;">
+        <div class="example-container">
+
             <div class="table-container">
-                <table id="table_1">
+                <table>
                     <tr class="__border">
                         <th>Параметр</th>
                         <th>Значение</th>
@@ -217,19 +219,20 @@
                     <tr><td>OTS <span style="font-size: 12px;">(констр.)</span></td><td>166 578</td><td>конт.</td></tr>
                 </table>
             </div>
-
-            <div style="padding: 0 16px;">
-                <img style="width: 100%; height: 100%; object-fit: cover;" src="dist/static/zone_1.png">
+            <div class="img-container">
+                <img src="dist/static/zone_1.png">
             </div>
         </div>
+
         <!--
         <div class="section-description">Статичні параметри</div>
         -->
-        <div style="display: flex; margin-bottom: 16px;">
+
+        <div class="static-param-container">
             <img style="width: 200px;" src="dist/static/min_map.bmp">
 
-            <div class="table-container" style="margin: 0 16px; width: 100%;">
-                <table id="table_2">
+            <div class="table-container">
+                <table>
                     <tr class="__border">
                         <th>No плоскости</th>
                         <th>Транспорт большой<br>вместимости<br><span style="font-size: 12px;">шт./сутки</span></th>
@@ -270,96 +273,15 @@
             </div>
         </div>
 
-        <div style="display: flex; width: 100%; justify-content: flex-end;">
-            <img style="width: 50%; max-width: 550px;" src="dist/static/intensity_1.png">
-            <img style="width: 50%; margin: 0 16px; max-width: 550px;" src="dist/static/speed_1.png">
-        </div>
-
-        <!--
-        <div style="display: flex; margin-bottom: 16px;">
-            <div>
-                <div class="section-description">Приклад</div>
-                <div style="display: flex;">
-                    <div class="table-container">
-                        <table id="table_1">
-                            <tr class="__border">
-                                <th>Параметр</th>
-                                <th>Значение</th>
-                                <th>ед. изм</th>
-                            </tr>
-                            <tr><td>OTS ст. <span style="font-size: 12px;">(пеш.)</span></td><td>2 000</td><td>чел.</td></tr>
-                            <tr><td>OTS ст. <span style="font-size: 12px;">(авт.)</span></td><td>37 000</td><td>чел.</td></tr>
-                            <tr><td>Kst <span style="font-size: 12px;">(авт)</span></td><td>0.9</td><td></td></tr>
-                            <tr><td>Дистанция</td><td>229</td><td>м</td></tr>
-                            <tr><td>Скорость</td><td>31</td><td>км/час</td></tr>
-                            <tr><td>Время</td><td>26,6</td><td>сек</td></tr>
-                            <tr><td>Длина блока</td><td>100</td><td>сек</td></tr>
-                            <tr><td>Длина спота</td><td>10</td><td>сек</td></tr>
-                            <tr><td>CNT <span style="font-size: 12px;">(sp)</span></td><td>3,6</td><td>шт</td></tr>
-                            <tr><td>P <span style="font-size: 12px;">(spot)</span></td><td>0,36</td><td></td></tr>
-                            <tr><td>OTS <span style="font-size: 12px;">(sp)</span></td><td>16 658</td><td>конт.</td></tr>
-                            <tr><td>OTS <span style="font-size: 12px;">(констр.)</span></td><td>166 578</td><td>конт.</td></tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div style="margin-bottom: 16px; display: flex; width: 100%;">
-            <img style="width: 100%; max-width: 850px;" src="dist/static/zone_1.png">
-
-            <div style="max-width: 450px; display: flex; width: 100%; flex-direction: column; margin-left: 16px;">
+        <div class="graph-container">
+            <div class="img-container">
                 <img src="dist/static/intensity_1.png">
-                <img style="margin-top: 16px;" src="dist/static/speed_1.png">
+            </div>
+            <div class="img-container">
+                <img style="margin-left: 16px;" src="dist/static/speed_1.png">
             </div>
         </div>
 
-
-        <div style="display: flex; margin-bottom: 16px;">
-            <img style="width: 200px;" src="dist/static/min_map.bmp">
-
-            <div class="table-container" style="margin: 0 16px; width: 100%;">
-                <table id="table_2">
-                    <tr class="__border">
-                        <th>No плоскости</th>
-                        <th>Транспорт большой<br>вместимости<br><span style="font-size: 12px;">шт./сутки</span></th>
-                        <th>Микроавто бусы<br><span style="font-size: 12px;"> шт./сутки</span></th>
-                        <th>Авто.<br><span style="font-size: 12px;">шт./сутки</span></th>
-                        <th>Пешеходы<br><span style="font-size: 12px;">чел./сутки</span></th>
-                        <th>OTS <span style="font-size: 12px;">авт.</span></th>
-                        <th>OTS <span style="font-size: 12px;">пасс.</span></th>
-                        <th>OTS <span style="font-size: 12px;">пеш.</span></th>
-                        <th>OTS <span style="font-size: 12px;">сутки</span></th>
-                        <th>GRP</th>
-                    </tr>
-                    <tr>
-                        <td>123</td>
-                        <td>712</td>
-                        <td>820</td>
-                        <td>37 662</td>
-                        <td>1 765</td>
-                        <td>47 500</td>
-                        <td>22 000</td>
-                        <td>2 000</td>
-                        <td>71 500</td>
-                        <td>2,38</td>
-                    </tr>
-                    <tr>
-                        <td>23F1</td>
-                        <td>712</td>
-                        <td>820</td>
-                        <td>45 354</td>
-                        <td>1 765</td>
-                        <td>57 000</td>
-                        <td>22 000</td>
-                        <td>2 000</td>
-                        <td>81 000</td>
-                        <td>2,70</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        -->
     </section>
 </main>
 
